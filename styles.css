@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Verdana, sans-serif;
+    font-weight: 400px;
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+.hidden{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: -1px;
+    overflow: hidden;
+}
+/*start header*/
+.site-header{
+    color: #fff;
+    background-color: #222;
+}
+.site-header .container{
+    background-image: url(img/moon-rocket.png);
+    background-repeat: no-repeat;
+    background-position: 100% 130px;
+    
+    padding-top: 54px;
+    min-height: 400px;
+    padding-bottom: 180px;
+}
+.main-nav{
+    display: flex;
+    margin-bottom: 24px;
+}
+.logo{    
+    width: 62px;
+    height: 62px;
+    margin-right: 62px;
+}
+.site-menu, .contact-menu{
+    list-style: none;
+}
+.site-menu{
+    display: flex;
+    width: 706px;
+    margin-top: 38px;
+}
+
+.site-menu a{
+    display: block;
+    margin-right: 30px;
+    color: #D4D4D4;
+    text-decoration: none;
+}
+.site-header a:hover{
+    color: #fff;
+    transform: scale(1.1);
+    transition: 3s;
+}
+.site-menu a:active{
+    color: #ccc;
+}
+.contact-menu {
+    display: flex;
+    max-width: 180px;
+    margin-top: 25px;
+    margin-left: auto;
+}
+.contact-menu li{
+    margin-right: 24px;
+}
+.contact-menu .icon{
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
+.contact-menu .icon-mail{
+    background: url(img/mail-icon.png) no-repeat 0 50%;
+}
+.contact-menu .icon-phone{
+    background: url(img/phone-icon.png) no-repeat 0 50%;
+}
+.contact-menu a:hover{
+    opacity: 0.8;
+}
+.contact-menu a:active{
+    opacity: 0.4;
+}
+.about-us{
+    width: 300px;
+    padding-left: 122px;
+}
+.about-us h1{
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-family: 'Courier New', monospace;
+    line-height: 50px; 
+}
+.about-us p{
+    margin-bottom: 50px;
+    color: #D4D4D4;
+}
+/*end header*/
+
+/*start button*/
+.btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 190px;
+    padding: 17px 25px;
+    text-transform: uppercase;
+    vertical-align: top;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    color: #222;
+}
+.btn::after{
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    right: 17px;
+
+    width: 19px;
+    height: 16px;
+    background: url("img/right-arrow-dark.png") no-repeat 0 0;
+
+}
+.btn-yellow{
+    background-color: #FFCB06;
+}
+.btn-grey{
+    background-color: #222222;
+    color: #FFFFFF;
+    width: 215px;
+    text-align: left;
+    margin-left: 10px;
+}
+.btn-grey::after{
+    content: "";
+
+    width: 19px;
+    height: 16px;
+    background: url("img/right-arrow-white.png") no-repeat 0 0;
+}
+/*end button*/
+
+/*start adventage*/
+.adventage{
+    background: #131313;
+    color: #D4D4D4;
+    padding: 85px 0;
+}
+.adventage-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    gap: 80px;
+}
+.adventage-list li{
+    position: relative;
+
+    width: 180px;
+    /*margin-right: 80px;*/
+    padding-top: 110px;
+}
+.adventage-list li:last-child{
+    margin-right: 0;
+}
+.adventage-list li::after{
+    content: "";
+    top: 0;
+    left: 0;
+
+    position: absolute;
+    width: 60px;
+    height: 68px;
+}
+.adventage-made-in-russia::after{
+    background: url(img/advantage-icon-1.png) no-repeat;
+}
+.adventage-food::after{
+    background: url(img/advantage-icon-2.png) no-repeat;
+}
+.adventage-pilots::after{
+    background: url(img/advantage-icon-3.png) no-repeat;
+}
+.adventage-moon-rover::after{
+    background: url(img/advantage-icon-4.png) no-repeat;
+}
+/*end adventage*/
+
+.column-container{
+    display: flex;
+}
+.column-container .left-column, .column-container .right-column{
+    width: 450px;     
+}
+.column-container .left-column{
+    margin-right: 80px;
+    width: 440px;
+}
+
+/*start moon-vacation*/
+.moon-vacation{
+    padding: 80px 0 52px;
+
+}
+.moon-vacation .lead, .recomendation .lead{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    margin: 0px 0px 20px;
+}
+.moon-vacation p{
+    margin-top: 25px;
+}
+/*end moon-vacation*/
+
+/*start recomendation*/
+.recomendation{
+    padding-bottom: 126px;
+}
+.recomendation .column-container .left-column{
+    width: 424px;
+}
+.recomendation .column-container .right-column{
+    width: 400px;
+    margin-left: 20px;
+
+}
+.recomendation-list {
+    position: relative;
+}
+.recomendation-list li{
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 23px;
+}
+
+/*.recomendation-list li::before{
+    content: "";
+    
+    position: absolute;
+    top: 10px;
+    left: -1px;
+    
+    
+    background: #FFCB06;
+    border: 5px solid #FFCB06;
+    border-radius: 100%; 
+}*/
+.column-container .left-column .recomendation-list .dot{
+    width: 8px;
+    height: 8px;
+    background: #FFCB06;
+    border: 1px solid #FFCB06;
+    border-radius: 50%; 
+     
+    position: relative;
+    top: 20px; 
+}
+
+.column-container .right-column .recomendation-list .dot{
+    width: 8px;
+    height: 8px;
+    background: #FFCB06;
+    border: 1px solid #FFCB06;
+    border-radius: 50%; 
+     
+    position: relative;
+    top: 20px; 
+}
+/*end recomendation*/
+
+/*start vacation-request*/
+.vacation-request {
+    background: #F0F0F0;
+    padding: 100px 0 68px;
+}
+.vacation-request .left-column .lead{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 27px;
+    margin: 0px 0px 90px;
+}
+.vacation-request .left-column p{
+    width: 340px;
+}
+
+.vacation-request-form input[type="text"], .vacation-request-form input[type="tel"]{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border: 0;
+    margin: 5px;
+}
+.vacation-request-form input[type="text"]:hover{
+    color: #FFCB06;
+    border: 1px solid #FFCB06;
+    transform: scale(0.5);
+    transition: 4s;
+}
+.vacation-request-form input[type="text"]:active{
+    background-color: #FFCB06;
+}
+.vacation-request-form input[type="tel"]:hover{
+    color: #FFCB06;
+    border: 1px solid #FFCB06;
+    transform: scale(1.1);
+    transition: 4s;
+}
+.vacation-request-form input[type="tel"]:active{
+    background-color: #FFCB06;
+}
+.vacation-request-form .half-field{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 19px;
+}
+.vacation-request-form input[type="checkbox"]{
+    margin-left: 0px;
+    margin-bottom: 41px;
+    margin-right: 0px;
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+}
+.vacation-request-form input[type="checkbox"]+label::before{
+    content: '';
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #222;
+    border-radius: 25%;
+    margin: 0 17px 0 0;
+}
+.vacation-request-form input[type="checkbox"]:checked+label::before{
+    background: url(img/tick.png) no-repeat 0 0;   
+}
+/*end vacation-request*/
+
+/*start timetable*/
+.timetable{
+    background: #222222;
+    color: #D4D4D4;
+    padding-top: 97px;
+    padding-bottom: 88px;
+}
+.timetable .timetable-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 78px;
+}
+.timetable .timetable-info p{
+    width: 467px;
+}
+.timetable .timetable-info h2{
+    color: #FECA30;
+    font-family: 'Courier New';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+}
+.timetable .timetable-info a{
+    color: #FECA30;   
+}
+.timetable-flights{
+    width: 960px;
+    height: 150px;
+    
+    box-sizing: border-box;
+    width: 100%;
+}
+.timetable-flights th{
+    background: #111111;
+    border-color: #111111;
+    text-align: center;
+}
+.timetable-flights td{
+    font-weight: bold;
+    border-bottom: 1px solid #555555;
+    text-align: center;
+}
+/*end timetable*/
+
+/*start footer*/
+.site-footer{
+    background: #131313;
+    color: #D4D4D4;
+    text-decoration: none;
+    padding-top: 60px;
+    padding-bottom: 84px;
+}    
+.footer-columns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-columns-container .left-column{
+    display: flex;
+    flex-direction: column;
+   
+}
+.logo-container{
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 100px;
+}
+.logo-container p{
+    margin-top: 25px;
+    margin-left: -45px;
+}
+.footer-columns-container .right-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+.copyrights{
+    color: #555555;
+}
+.footer-columns-container .right-column .footer-menu{
+    width: 131px;
+    display: block;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 60px;
+}
+.footer-columns-container .right-column ul{
+    list-style-type: none;
+}
+.footer-columns-container .right-column a{
+    
+    text-decoration: none;
+    color: #D4D4D4;
+    margin-bottom: 70px;
+   
+    
+}
+.footer-columns-container .right-column .border{
+    width: 180px;
+    border-bottom: 1px solid #555555;
+    margin-top: 11px;
+}
+.footer-columns-container .right-column li{
+    margin-top: 27px;
+}
+.footer-menu .footer-submenu {
+    margin-top: 54px;
+    color: #555555;
+}
+/*end footer*/
+
+
+
+
+@media (min-width: 1280px){
+    .site-header .container{
+        background-image: url("img/moon-rocket.png");
+        background-repeat: no-repeat;
+        background-position: 100% 130px;
+    }
+}
